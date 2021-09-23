@@ -1,0 +1,72 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: beige;
+  justify-content: space-evenly;
+}
+.footer-actions {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+.footer-actions button {
+  margin: 5% 0;
+  padding: 5%;
+  background-color: lightblue;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+}
+.footer-actions button:hover {
+  background-color: lightskyblue;
+  cursor: pointer;
+}
+
+.todos-remaining {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0;
+}
+
+.filters {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  margin: 0;
+}
+.filters ul {
+  padding: 0;
+  list-style-type: none;
+}
+.filters ul li {
+  align-items: center;
+  margin: auto 0;
+}
+.filters .selected {
+  border: 2px solid grey;
+  background-color: aliceblue;
+}
+
+.filter-color-selection {
+  display: flex;
+  flex-direction: column;
+}
+.filter-color-selection label {
+  width: 100%;
+}
+.filter-color-selection .color {
+  margin: 0;
+}
+.filter-color-selection .color-checkbox {
+  margin: auto;
+}
+.filter-color-selection .color-block {
+  display: inline-block;
+  width: 20px;
+  height: 10px;
+  margin: 0 1%;
+}
+
+/*# sourceMappingURL=footer.css.map */

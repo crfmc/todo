@@ -1,9 +1,17 @@
+// Import features
+import Header from './reducers/features/header/Header'
+import TodoList from './reducers/features/todos/TodoList';
+import Footer from './reducers/features/footer/Footer'
 
-import './styles/css/app.css';
+import './App.css';
 
 function App() {
   return (
-    <h1 className="header">Hello welcome to the ToDo app</h1>
+    <div className="app-container">
+      <Header />
+      <TodoList />
+      <Footer />
+    </div>
   );
 }
 

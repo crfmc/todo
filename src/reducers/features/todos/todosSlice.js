@@ -21,6 +21,7 @@ export default function todosReducer(state = initialState, action) {
         }
       ]
     }
+      
     case 'todos/todoToggled': {
       return state.map(todo => {
         if (todo.id !== action.payload) {
@@ -31,6 +32,42 @@ export default function todosReducer(state = initialState, action) {
             ...todo,
             completed: !todo.completed
           }
+        }
+      })
+    }
+      
+    case 'todo/colorSelected': {
+      const { color, todoId } = action.payload;
+      return state.map(todo => {
+        if (todo.id !== todoId) {
+          return todo
+        }
+        else {
+          return {
+            ...todo,
+            color
+          }
+        }
+      })
+    }
+      
+    case 'todos/todoDeleted': {
+      return state.filter(todo => todo.id !== action.payload)
+    }
+      
+    case 'todos/allCompleted': {
+      return state.map(todo => {
+        return {
+          ...todo,
+          completed: true
+        }
+      })
+    }
+    case 'todos/completedCleared': {
+      return state.map(todo => {
+        return {
+          ...todo,
+          completed: !todo.completed
         }
       })
     }
