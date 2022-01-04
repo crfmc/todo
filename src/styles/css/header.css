@@ -1,0 +1,14 @@
+.todos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 96%;
+  background-color: beige;
+  padding: 2%;
+}
+.todos-h1 {
+  color: purple;
+  margin: 2% auto;
+}
+
+/*# sourceMappingURL=header.css.map */
